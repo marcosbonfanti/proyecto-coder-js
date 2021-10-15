@@ -6,6 +6,7 @@
   "scripts": {
     "build": "node_modules/.bin/tsc",
     "start": "node dist/index.js",
+    "start:with:args": "node dist/index.js 242793331144866 e3e4f92fd583bfb86ac3987ac0a4b9c7",
     "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -37,6 +38,7 @@
     "@types/express-handlebars": "^5.3.1",
     "@types/express-session": "^1.17.4",
     "@types/mongodb": "^4.0.7",
+    "@types/node": "^16.11.0",
     "@types/reflect-metadata": "^0.1.0",
     "@types/socket.io": "^3.0.2",
     "bcrypt": "^5.0.1",

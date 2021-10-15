@@ -7,14 +7,18 @@ import {
   Strategy as FaceBookStrategy, 
 } from 'passport-facebook';
 
-
+const argumentos = process.argv.splice(2);
+console.log("estoy en autttth")
+console.log(argumentos[0]);
 
 const strategyOptions: StrategyOption = {
-  clientID: Config.FACEBOOK_APP_ID,
-  clientSecret: Config.FACEBOOK_APP_SECRET,
+  clientID: argumentos[0] || Config.FACEBOOK_APP_ID,
+  clientSecret: argumentos[1] || Config.FACEBOOK_APP_SECRET,
   callbackURL: 'http://localhost:8080/api/auth/facebook/callback',
   profileFields: ['id', 'displayName', 'photos', 'emails'],
 };
+
+console.log(strategyOptions); 
 
 const loginFunc: VerifyFunction = async (
   accessToken,
@@ -22,11 +26,11 @@ const loginFunc: VerifyFunction = async (
   profile,
   done
 ) => {
-  console.log('SALIO TODO BIEN');
-  console.log(accessToken);
-  console.log(refreshToken);
-  console.log(profile);
-  return done(null, profile);
+  // console.log('SALIO TODO BIEN');
+  // console.log(accessToken);
+  // console.log(refreshToken);
+  // console.log(profile);
+  // return done(null, profile);
 };
 
 passport.use(new FaceBookStrategy(strategyOptions, loginFunc));

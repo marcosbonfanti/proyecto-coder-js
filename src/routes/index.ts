@@ -76,6 +76,19 @@ router.get('/datos', (req, res) => {
   }
 });
 
+router.get('/info', (req, res) => {
+  console.log(process);
+  res.json({
+    "argumentos": process.argv,
+    "OS": process.platform,
+    "Node Version": process.version,
+    "Memory": process.memoryUsage,
+    "Path": process.execPath,
+    "PID": process.pid
+  })
+
+});
+
 export default router;
 
 
