@@ -8,8 +8,7 @@ import {
 } from 'passport-facebook';
 
 const argumentos = process.argv.splice(2);
-console.log("estoy en autttth")
-console.log(argumentos[0]);
+
 
 const strategyOptions: StrategyOption = {
   clientID: argumentos[0] || Config.FACEBOOK_APP_ID,
@@ -30,7 +29,7 @@ const loginFunc: VerifyFunction = async (
   // console.log(accessToken);
   // console.log(refreshToken);
   // console.log(profile);
-  // return done(null, profile);
+  return done(null, profile);
 };
 
 passport.use(new FaceBookStrategy(strategyOptions, loginFunc));
