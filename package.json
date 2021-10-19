@@ -6,7 +6,11 @@
   "scripts": {
     "build": "node_modules/.bin/tsc",
     "start": "node dist/index.js",
-    "start:with:args": "node dist/index.js FACEBOOK_APP_ID FACEBOOK_APP_SECRET",
+    "start:with:args": "node dist/index.js 242793331144866 e3e4f92fd583bfb86ac3987ac0a4b9c7 CLUSTER",
+    "prod:forever": "npm run build && node_modules/.bin/forever start dist/index.js",
+    "prod:forever:cluster": "npm run build && node_modules/.bin/forever start dist/index.js CLUSTER",
+    "prod:pm2": "npm run build && node_modules/.bin/pm2 start dist/index.js --watch",
+    "prod:pm2:cluster": "npm run build && node_modules/.bin/pm2 start dist/index.js CLUSTER --watch",
     "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -49,6 +53,7 @@
     "express-handlebars": "^5.3.4",
     "express-session": "^1.17.2",
     "faker": "^5.5.3",
+    "forever": "^4.0.1",
     "knex": "^0.95.11",
     "moment": "^2.29.1",
     "mongodb": "^4.1.3",

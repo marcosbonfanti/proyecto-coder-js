@@ -3,6 +3,7 @@ import { isLoggedIn } from '../middlewares/auth';
 import passport from '../middlewares/auth';
 import UserRouter from './user';
 import ProductoRouter from './productMock'
+import { numCPUs } from '../index';
 
 
 const router = Router();
@@ -84,7 +85,8 @@ router.get('/info', (req, res) => {
     "Node Version": process.version,
     "Memory": process.memoryUsage,
     "Path": process.execPath,
-    "PID": process.pid
+    "PID": process.pid,
+    "NumCPU": numCPUs
   })
 
 });
