@@ -7,8 +7,7 @@ import {
   Strategy as FaceBookStrategy, 
 } from 'passport-facebook';
 
-const argumentos = process.argv.splice(2);
-
+export const argumentos = process.argv.splice(2);
 
 const strategyOptions: StrategyOption = {
   clientID: argumentos[0] || Config.FACEBOOK_APP_ID,
@@ -50,3 +49,4 @@ export const isLoggedIn = (req: Request, res: Response, done: NextFunction) => {
 };
 
 export default passport;
+
