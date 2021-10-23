@@ -2,11 +2,16 @@ import { Router } from 'express';
 import { isLoggedIn } from '../middlewares/auth';
 import passport from '../middlewares/auth';
 import UserRouter from './user';
-import ProductoRouter from './productMock'
+
+import ProductoRouter from './productMock';
+import path from 'path';
+import { fork } from 'child_process';
 import { numCPUs } from '../index';
 
 
+
 const router = Router();
+const scriptPath = path.resolve(__dirname, '../utils/getRandoms');
 
 router.get('/login', (req, res) => {
   res.render('login');
@@ -88,6 +93,18 @@ router.get('/info', (req, res) => {
     "PID": process.pid,
     "NumCPU": numCPUs
   })
+});
+
+router.get('/randoms', (req, res) => {
+  const cantRandoms = req.query.cant;
+
+  const computo = fork(scriptPath, [ cantRandoms.toString() ]); 
+  computo.send('start');
+  computo.on('message', (sum) => {
+    res.json({
+      resultado: sum,
+    });
+  }); 
 
 });
 

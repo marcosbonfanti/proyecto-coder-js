@@ -9,7 +9,6 @@ import {
 
 export const argumentos = process.argv.splice(2);
 
-
 const strategyOptions: StrategyOption = {
   clientID: argumentos[0] || Config.FACEBOOK_APP_ID,
   clientSecret: argumentos[1] || Config.FACEBOOK_APP_SECRET,
@@ -29,7 +28,7 @@ const loginFunc: VerifyFunction = async (
   // console.log(accessToken);
   // console.log(refreshToken);
   // console.log(profile);
-  // return done(null, profile);
+  return done(null, profile);
 };
 
 passport.use(new FaceBookStrategy(strategyOptions, loginFunc));
