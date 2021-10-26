@@ -4,10 +4,12 @@ import session from 'express-session';
 import passport from '../middlewares/auth';
 import path from 'path';
 import exphbs from 'express-handlebars';
+import compression from 'compression';
 
 const app = express();
 
 app.use(express.json());
+app.use(compression());
 
 app.use(
   session({
