@@ -1,8 +1,17 @@
+const between = (min, max) => {
+  return Math.floor(Math.random() * (max - min) + min);
+};
+
 export const calculo = (cant) => {
-  cant.toInt()
-  let numArray = [];
-  for (let i = 0; i < cant.toInt(); i++) {
-    
+  let numArray = {};
+  for (let i = 0; i < cant[0]; i++) {
+    let newNum = between(1, 1000);
+    if(newNum in numArray) {
+      numArray[newNum] += 1;   
+    }
+    else {
+      numArray[newNum] = 1;  
+    }
   }
   return numArray;
 };

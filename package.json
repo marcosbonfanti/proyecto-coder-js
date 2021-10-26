@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node_modules/.bin/tsc",
     "start": "node dist/index.js",
-    "start:with:args": "node dist/index.js 242793331144866 e3e4f92fd583bfb86ac3987ac0a4b9c7 CLUSTER",
+    "start:with:args": "node dist/index.js FACEBOOK_APP_ID FACEBOOK_APP_SECRET CLUSTER",
     "prod:forever": "npm run build && node_modules/.bin/forever start dist/index.js",
     "prod:forever:cluster": "npm run build && node_modules/.bin/forever start dist/index.js CLUSTER",
     "prod:pm2": "npm run build && node_modules/.bin/pm2 start dist/index.js --watch",
