@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { isLoggedIn } from '../middlewares/auth';
 import passport from '../middlewares/auth';
 import UserRouter from './user';
-
+import Config from '../config';
 import ProductoRouter from './productMock';
 import path from 'path';
 import { fork } from 'child_process';
@@ -91,7 +91,8 @@ router.get('/info', (req, res) => {
     "Memory": process.memoryUsage,
     "Path": process.execPath,
     "PID": process.pid,
-    "NumCPU": numCPUs
+    "NumCPU": numCPUs,
+    "PORT": Config.PORT
   })
 });
 
