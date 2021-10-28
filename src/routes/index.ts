@@ -7,6 +7,7 @@ import ProductoRouter from './productMock';
 import path from 'path';
 import { fork } from 'child_process';
 import { numCPUs } from '../index';
+import { logger } from '../config/logger';
 
 
 
@@ -83,7 +84,7 @@ router.get('/datos', (req, res) => {
 });
 
 router.get('/info', (req, res) => {
-  console.log(process);
+  logger.info(process);
   res.json({
     "argumentos": process.argv,
     "OS": process.platform,

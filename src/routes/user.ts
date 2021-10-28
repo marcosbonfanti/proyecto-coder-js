@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { logger } from '../config/logger';
 import { UserModel } from '../models/user';
 
 const router = Router();
@@ -12,7 +13,7 @@ router.post('/', async (req, res) => {
   const { username, password, email, firstName, lastName } = req.body;
 
   if (!username || !password || !email || !firstName || !lastName) {
-    console.log('Invalid body fields');
+    logger.info('Invalid body fields');
     return res.status(400).json({ msg: 'Invalid fields' });
   }
 

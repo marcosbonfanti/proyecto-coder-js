@@ -1,5 +1,6 @@
 import { messageModel } from './dbSchema';
 import { normalize, schema } from 'normalizr';
+import { logger } from '../../config/logger';
 
 const author = new schema.Entity('author', {}, { idAttribute: 'email' });
 
@@ -26,8 +27,8 @@ export const getAllMessages = async () => {
 
     return normalizedMessages;
   } catch (err) {
-    console.log('ERROR');
-    console.log(err);
+    logger.error('ERROR');
+    logger.error(err);
   }
 };
 

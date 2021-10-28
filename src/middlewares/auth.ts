@@ -6,6 +6,7 @@ import {
   StrategyOption, 
   Strategy as FaceBookStrategy, 
 } from 'passport-facebook';
+import { logger } from '../config/logger';
 
 export const argumentos = process.argv.splice(2);
 
@@ -16,7 +17,7 @@ const strategyOptions: StrategyOption = {
   profileFields: ['id', 'displayName', 'photos', 'emails'],
 };
 
-console.log(strategyOptions); 
+logger.info(strategyOptions); 
 
 const loginFunc: VerifyFunction = async (
   accessToken,

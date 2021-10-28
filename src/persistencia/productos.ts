@@ -1,3 +1,4 @@
+import { logger } from '../config/logger';
 import { Producto } from '../interfaces/interfaces';
 import {productsSchema} from '../schema/productschema';
 
@@ -14,7 +15,7 @@ class ProductosPersistencia {
       .findOne({ _id: id });
       return producto;
     }catch(error){
-      console.log('Producto no encontrado');
+      logger.info('Producto no encontrado');
     }
   }
   async guardar(nombre:string,precio:number,url:string) {
@@ -58,7 +59,7 @@ class ProductosPersistencia {
       // const data = { nombre, precio, url };
       return await productsSchema.updateOne({ _id: id }, { $set: producto });
     } catch (error) {
-      console.log(error);
+      logger.error(error);
     }
   }
 
