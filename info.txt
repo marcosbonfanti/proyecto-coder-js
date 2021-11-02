@@ -1,0 +1,963 @@
+Statistical profiling result from info.log, (4276 ticks, 4 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     64    1.5%          /usr/lib/system/libsystem_pthread.dylib
+     50    1.2%          /usr/lib/system/libsystem_malloc.dylib
+     47    1.1%          /usr/lib/system/libsystem_c.dylib
+     31    0.7%          /usr/lib/system/libsystem_kernel.dylib
+     25    0.6%          /usr/lib/system/libsystem_platform.dylib
+     14    0.3%          /usr/lib/libc++.1.dylib
+      3    0.1%          /usr/lib/system/libdyld.dylib
+      2    0.0%          /usr/lib/libc++abi.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      7    0.2%    0.2%  LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+      4    0.1%    0.1%  LazyCompile: *readPackage node:internal/modules/cjs/loader:286:21
+      4    0.1%    0.1%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      3    0.1%    0.1%  LazyCompile: *resolve node:path:1095:10
+      3    0.1%    0.1%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      3    0.1%    0.1%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:625:37
+      2    0.0%    0.0%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      2    0.0%    0.0%  LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+      2    0.0%    0.0%  LazyCompile: *normalizeString node:path:66:25
+      2    0.0%    0.0%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:490:28
+      1    0.0%    0.0%  RegExp: ^\/user\/?(?=\/|$)
+      1    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    0.0%  RegExp: ;\s*charset\s*=
+      1    0.0%    0.0%  LazyCompile: *value node:internal/console/constructor:261:20
+      1    0.0%    0.0%  LazyCompile: *validateString node:internal/validators:117:24
+      1    0.0%    0.0%  LazyCompile: *realpathSync node:fs:2403:22
+      1    0.0%    0.0%  LazyCompile: *readPackageScope node:internal/modules/cjs/loader:317:26
+      1    0.0%    0.0%  LazyCompile: *parse /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/vary/index.js:96:16
+      1    0.0%    0.0%  LazyCompile: *fastparse /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.0%  LazyCompile: *dirname node:path:1279:10
+      1    0.0%    0.0%  LazyCompile: *_write node:internal/streams/writable:283:16
+      1    0.0%    0.0%  LazyCompile: *Module._resolveLookupPaths node:internal/modules/cjs/loader:663:38
+
+ [C++]:
+   ticks  total  nonlib   name
+   1635   38.2%   40.5%  T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+    787   18.4%   19.5%  T __ZN4node10contextify17ContextifyContext15CompileFunctionERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+    751   17.6%   18.6%  T _host_get_clock_service
+    172    4.0%    4.3%  T __ZN4node10StreamBase8JSMethodIXadL_ZNS0_6WritevERKN2v820FunctionCallbackInfoINS2_5ValueEEEEEEEvS7_
+    100    2.3%    2.5%  T __ZN4node13native_module15NativeModuleEnv15CompileFunctionERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+     73    1.7%    1.8%  t __ZN4node2fsL4OpenERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+     49    1.1%    1.2%  T __kernelrpc_mach_port_set_attributes
+     38    0.9%    0.9%  t __ZN4node2fsL4StatERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+     29    0.7%    0.7%  T _mig_strncpy_zerofill
+     23    0.5%    0.6%  T _task_get_special_port
+     21    0.5%    0.5%  T __ZN4node2fs5CloseERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+     20    0.5%    0.5%  T _mach_port_allocate
+     18    0.4%    0.4%  t __ZN4node2fsL18InternalModuleStatERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+     18    0.4%    0.4%  T __ZN4node6crypto4Hash3NewERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+     15    0.4%    0.4%  t __ZN4node2fsL22InternalModuleReadJSONERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+     15    0.4%    0.4%  T _mach_make_memory_entry_64
+     15    0.4%    0.4%  T __kernelrpc_vm_remap
+     14    0.3%    0.3%  t __ZN4nodeL9EnvGetterEN2v85LocalINS0_4NameEEERKNS0_20PropertyCallbackInfoINS0_5ValueEEE
+     13    0.3%    0.3%  t __ZN4node6Buffer12_GLOBAL__N_111StringSliceILNS_8encodingE1EEEvRKN2v820FunctionCallbackInfoINS4_5ValueEEE
+     13    0.3%    0.3%  T __ZN4node10StreamBase8JSMethodIXadL_ZNS0_11WriteStringILNS_8encodingE1EEEiRKN2v820FunctionCallbackInfoINS4_5ValueEEEEEEEvS9_
+      9    0.2%    0.2%  t __ZNSt3__124__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m
+      9    0.2%    0.2%  t __ZN4node2fsL4ReadERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      9    0.2%    0.2%  T _mach_ports_register
+      8    0.2%    0.2%  t __ZNSt3__112__hash_tableIN4node19CleanupHookCallbackENS2_4HashENS2_5EqualENS_9allocatorIS2_EEE4findIS2_EENS_15__hash_iteratorIPNS_11__hash_nodeIS2_PvEEEERKT_
+      8    0.2%    0.2%  T __ZN4node6crypto4Hash10HashDigestERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      7    0.2%    0.2%  T __ZN4node7binding6DLOpenERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      6    0.1%    0.1%  t __ZN4node6Buffer12_GLOBAL__N_111StringWriteILNS_8encodingE1EEEvRKN2v820FunctionCallbackInfoINS4_5ValueEEE
+      6    0.1%    0.1%  t __ZN4node2fsL5FStatERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      6    0.1%    0.1%  T __ZN4node6crypto7TLSWrap18GetPeerCertificateERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      6    0.1%    0.1%  T __ZN4node6crypto13SecureContext12AddRootCertsERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      5    0.1%    0.1%  t __ZN4node10task_queueL13RunMicrotasksERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      5    0.1%    0.1%  T _guarded_open_np
+      4    0.1%    0.1%  t __ZNSt3__116__pad_and_outputIcNS_11char_traitsIcEEEENS_19ostreambuf_iteratorIT_T0_EES6_PKS4_S8_S8_RNS_8ios_baseES4_
+      4    0.1%    0.1%  t __ZN4node10AsyncHooks17pop_async_contextEd
+      4    0.1%    0.1%  T __ZN4node9AsyncWrap19EmitTraceEventAfterENS0_12ProviderTypeEd
+      4    0.1%    0.1%  T __ZN4node6crypto9CryptoJobINS0_12PBKDF2TraitsEE3RunERKN2v820FunctionCallbackInfoINS4_5ValueEEE
+      4    0.1%    0.1%  T __ZN4node6crypto4Hmac8HmacInitERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      3    0.1%    0.1%  T __ZN4node6crypto4Hmac10HmacDigestERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      2    0.0%    0.0%  t __ZN4node2fsL5LStatERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      2    0.0%    0.0%  t __ZN4node12_GLOBAL__N_17IsProxyERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      2    0.0%    0.0%  T _pselect$DARWIN_EXTSN
+      2    0.0%    0.0%  T __ZN4node9AsyncWrap21EmitTraceEventDestroyEv
+      2    0.0%    0.0%  T __ZN4node9AsyncWrap11EmitDestroyEPNS_11EnvironmentEd
+      2    0.0%    0.0%  T __ZN4node7binding18GetInternalBindingERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      2    0.0%    0.0%  T __ZN4node7TTYWrap3NewERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      2    0.0%    0.0%  T __ZN4node6crypto4Hmac3NewERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      2    0.0%    0.0%  T __ZN4node6crypto4Hash10HashUpdateERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      2    0.0%    0.0%  T __ZN4node2fs9FSReqBaseD2Ev
+      2    0.0%    0.0%  T __ZN4node2fs16NewFSReqCallbackERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      2    0.0%    0.0%  T __ZN4node2fs13FSReqCallback6RejectEN2v85LocalINS2_5ValueEEE
+      1    0.0%    0.0%  t __system_version_compat_open_shim
+      1    0.0%    0.0%  t __ZZN4node11Environment27RunAndClearNativeImmediatesEbENK3$_7clEPNS_13CallbackQueueIvJPS0_EEE
+      1    0.0%    0.0%  t __ZThn56_N4node12_GLOBAL__N_16Parser12OnStreamReadElRK8uv_buf_t
+      1    0.0%    0.0%  t __ZNSt3__112__hash_tableImNS_4hashImEENS_8equal_toImEENS_9allocatorImEEE6removeENS_21__hash_const_iteratorIPNS_11__hash_nodeImPvEEEE
+      1    0.0%    0.0%  t __ZN4nodeL8EnvQueryEN2v85LocalINS0_4NameEEERKNS0_20PropertyCallbackInfoINS0_7IntegerEEE
+      1    0.0%    0.0%  t __ZN4nodeL14MakeUtf8StringIcEEvPN2v87IsolateENS1_5LocalINS1_5ValueEEEPNS_16MaybeStackBufferIT_Lm1024EEE
+      1    0.0%    0.0%  t __ZN4node9inspector12_GLOBAL__N_120InspectorConsoleCallERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      1    0.0%    0.0%  t __ZN4node6Buffer12_GLOBAL__N_116EncodeUtf8StringERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      1    0.0%    0.0%  t __ZN4node6Buffer12_GLOBAL__N_111StringSliceILNS_8encodingE5EEEvRKN2v820FunctionCallbackInfoINS4_5ValueEEE
+      1    0.0%    0.0%  t __ZN4node4utilL14SetHiddenValueERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    0.0%    0.0%  t __ZN4node2fs13FSReqCallbackD0Ev
+      1    0.0%    0.0%  t __ZN4node2fs10GetReqWrapERKN2v820FunctionCallbackInfoINS1_5ValueEEEib
+      1    0.0%    0.0%  t __ZN4node16MaybeStackBufferIcLm1024EE25AllocateSufficientStorageEm
+      1    0.0%    0.0%  t __ZN4node15TraceEventScopeD2Ev
+      1    0.0%    0.0%  t __ZN4node15TraceEventScopeC2EPKcS2_Pv
+      1    0.0%    0.0%  t __ZN4node12_GLOBAL__N_118ToggleImmediateRefERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    0.0%    0.0%  t __ZN4node12_GLOBAL__N_111GetLibuvNowERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    0.0%    0.0%  t __ZN4node11Environment14AddCleanupHookEPFvPvES1_
+      1    0.0%    0.0%  t __ZN4node10BaseObject17decrease_refcountEv
+      1    0.0%    0.0%  t __ZN4node10AsyncHooks18push_async_contextEddN2v85LocalINS1_6ObjectEEE
+      1    0.0%    0.0%  T _pthread_threadid_np
+      1    0.0%    0.0%  T _pthread_cond_broadcast
+      1    0.0%    0.0%  T _posix_spawnattr_destroy
+      1    0.0%    0.0%  T _mach_timebase_info
+      1    0.0%    0.0%  T _mach_port_get_attributes
+      1    0.0%    0.0%  T __ZThn88_N4node15LibuvStreamWrap7IsAliveEv
+      1    0.0%    0.0%  T __ZN4node9AsyncWrap20EmitTraceEventBeforeEv
+      1    0.0%    0.0%  T __ZN4node7TCPWrap7ConnectERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node6crypto7TLSWrap5StartERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node6crypto4Hmac10HmacUpdateERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node6crypto13SecureContext4InitERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node6Buffer11HasInstanceEN2v85LocalINS1_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node27DTRACE_HTTP_SERVER_RESPONSEERKN2v820FunctionCallbackInfoINS0_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node21InternalCallbackScopeC2EPNS_11EnvironmentEN2v85LocalINS3_6ObjectEEERKNS_13async_contextEi
+      1    0.0%    0.0%  T __ZN4node21InternalCallbackScopeC1EPNS_11EnvironmentEN2v85LocalINS3_6ObjectEEERKNS_13async_contextEi
+      1    0.0%    0.0%  T __ZN4node21InternalCallbackScope5CloseEv
+      1    0.0%    0.0%  T __ZN4node20InternalMakeCallbackEPNS_11EnvironmentEN2v85LocalINS2_6ObjectEEES5_NS3_INS2_8FunctionEEEiPNS3_INS2_5ValueEEENS_13async_contextE
+      1    0.0%    0.0%  T __ZN4node11StringBytes11StorageSizeEPN2v87IsolateENS1_5LocalINS1_5ValueEEENS_8encodingE
+      1    0.0%    0.0%  T __ZN4node10cares_wrap11ChannelWrap3NewERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node10StreamBase8JSMethodIXadL_ZNS0_8ShutdownERKN2v820FunctionCallbackInfoINS2_5ValueEEEEEEEvS7_
+      1    0.0%    0.0%  T __ZN4node10StreamBase8JSMethodIXadL_ZNS0_11WriteBufferERKN2v820FunctionCallbackInfoINS2_5ValueEEEEEEEvS7_
+      1    0.0%    0.0%  T __ZN4node10HandleWrap5CloseERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+
+ [Summary]:
+   ticks  total  nonlib   name
+     44    1.0%    1.1%  JavaScript
+   3992   93.4%   98.8%  C++
+    296    6.9%    7.3%  GC
+    236    5.5%          Shared libraries
+      4    0.1%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+   2885   97.7%   67.5%  T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+     23    0.8%    0.5%  T _task_get_special_port
+     11    0.4%    0.3%  T __kernelrpc_vm_remap
+      9    0.3%    0.2%  T _mach_ports_register
+      8    0.3%    0.2%  T __kernelrpc_mach_port_set_attributes
+      2    0.1%    0.0%  t __ZNSt3__124__put_character_sequenceIcNS_11char_traitsIcEEEERNS_13basic_ostreamIT_T0_EES7_PKS4_m
+      2    0.1%    0.0%  t __ZN4node9inspector12_GLOBAL__N_120InspectorConsoleCallERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      2    0.1%    0.0%  t __ZN4node10task_queueL13RunMicrotasksERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    0.0%    0.0%  t __ZN4nodeL14MakeUtf8StringIcEEvPN2v87IsolateENS1_5LocalINS1_5ValueEEEPNS_16MaybeStackBufferIT_Lm1024EEE
+      1    0.0%    0.0%  t __ZN4node2fsL4OpenERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    0.0%    0.0%  t __ZN4node2fs10GetReqWrapERKN2v820FunctionCallbackInfoINS1_5ValueEEEib
+      1    0.0%    0.0%  t __ZN4node16MaybeStackBufferIcLm1024EE25AllocateSufficientStorageEm
+      1    0.0%    0.0%  T _mig_strncpy_zerofill
+      1    0.0%    0.0%  T _mach_timebase_info
+      1    0.0%    0.0%  T __ZThn88_N4node15LibuvStreamWrap7IsAliveEv
+      1    0.0%    0.0%  T __ZN4node6Buffer11HasInstanceEN2v85LocalINS1_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node2fs5CloseERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    0.0%    0.0%  T __ZN4node11StringBytes11StorageSizeEPN2v87IsolateENS1_5LocalINS1_5ValueEEENS_8encodingE
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   1635   38.2%  T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+    557   34.1%    T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+     47    8.4%      T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+      5   10.6%        LazyCompile: ~readPackage node:internal/modules/cjs/loader:286:21
+      4   80.0%          LazyCompile: ~readPackageScope node:internal/modules/cjs/loader:317:26
+      2   50.0%            LazyCompile: ~trySelf node:internal/modules/cjs/loader:437:17
+      2   50.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1   20.0%          LazyCompile: ~tryPackage node:internal/modules/cjs/loader:334:20
+      1  100.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:490:28
+      5   10.6%        LazyCompile: ~header /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:754:29
+      3   60.0%          LazyCompile: ~json /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:239:25
+      3  100.0%            LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/dist/routes/index.js:57:21
+      2   40.0%          LazyCompile: ~send /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:107:25
+      2  100.0%            LazyCompile: ~json /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:239:25
+      4    8.5%        LazyCompile: ~format /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/content-type/index.js:65:17
+      4  100.0%          LazyCompile: ~setCharset /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/utils.js:250:41
+      4  100.0%            LazyCompile: ~send /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:107:25
+      3    6.4%        LazyCompile: ~checkInvalidHeaderChar node:_http_common:231:32
+      3  100.0%          LazyCompile: ~<anonymous> node:_http_outgoing:562:45
+      3  100.0%            LazyCompile: ~setHeader node:_http_outgoing:572:57
+      2    4.3%        LazyCompile: ~parse /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/content-type/index.js:106:16
+      2  100.0%          LazyCompile: ~setCharset /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/utils.js:250:41
+      2  100.0%            LazyCompile: ~send /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:107:25
+      2    4.3%        LazyCompile: ~normalize node:path:1131:12
+      1   50.0%          LazyCompile: ~pipe /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/send/index.js:510:43
+      1  100.0%            LazyCompile: ~serveStatic /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/serve-static/index.js:72:31
+      1   50.0%          LazyCompile: ~join node:path:1170:7
+      1  100.0%            LazyCompile: ~pipe /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/send/index.js:510:43
+      2    4.3%        LazyCompile: ~FastBuffer node:internal/buffer:958:14
+      2  100.0%          LazyCompile: ~createUnsafeBuffer node:internal/buffer:1059:28
+      1   50.0%            LazyCompile: ~createPool node:buffer:148:20
+      1   50.0%            LazyCompile: ~allocate node:buffer:398:18
+      2    4.3%        LazyCompile: ~<anonymous> node:internal/fs/utils:356:35
+      2  100.0%          LazyCompile: ~<anonymous> node:internal/fs/utils:665:38
+      2  100.0%            LazyCompile: ~<anonymous> node:internal/fs/utils:677:42
+      2    4.3%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:490:28
+      2  100.0%          LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:856:35
+      1   50.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:753:24
+      1   50.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:753:24
+      1    2.1%        LazyCompile: ~randomBytes node:internal/crypto/random:91:21
+      1  100.0%          LazyCompile: ~randomBytesSync /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/random-bytes/index.js:72:25
+      1  100.0%            LazyCompile: ~uidSync /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/uid-safe/index.js:75:18
+      1    2.1%        LazyCompile: ~populateMaps /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mime-types/index.js:154:23
+      1  100.0%          Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mime-types/index.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1    2.1%        LazyCompile: ~pipe /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/send/index.js:510:43
+      1  100.0%          LazyCompile: ~serveStatic /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/serve-static/index.js:72:31
+      1  100.0%            LazyCompile: ~handle /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/layer.js:86:49
+      1    2.1%        LazyCompile: ~parseCertString node:internal/tls:47:25
+      1  100.0%          LazyCompile: ~translatePeerCertificate node:_tls_common:121:34
+      1  100.0%            LazyCompile: ~TLSSocket.getPeerCertificate node:_tls_wrap:992:50
+      1    2.1%        LazyCompile: ~merge /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/merge-descriptors/index.js:34:15
+      1  100.0%          LazyCompile: ~createApplication /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/express.js:37:27
+      1  100.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/dist/services/server.js:1:1
+      1    2.1%        LazyCompile: ~match /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/layer.js:110:39
+      1  100.0%          LazyCompile: ~matchLayer /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:572:20
+      1  100.0%            LazyCompile: ~next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+      1    2.1%        LazyCompile: ~isIPv6 node:internal/net:35:16
+      1  100.0%          LazyCompile: ~isIP node:internal/net:39:14
+      1  100.0%            LazyCompile: ~parseSslOptions /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:211:25
+      1    2.1%        LazyCompile: ~hash /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:596:14
+      1  100.0%          LazyCompile: ~generate /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:363:22
+      1  100.0%            LazyCompile: ~session /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:179:26
+      1    2.1%        LazyCompile: ~expressInit /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%          LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+      1  100.0%            LazyCompile: ~query /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/middleware/query.js:39:24
+      1    2.1%        LazyCompile: ~exports.sign /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/cookie-signature/index.js:16:24
+      1  100.0%          LazyCompile: ~exports.unsign /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/cookie-signature/index.js:36:26
+      1  100.0%            LazyCompile: ~unsigncookie /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:675:22
+      1    2.1%        LazyCompile: ~createTopology /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/operations/connect.js:53:24
+      1  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/operations/connect.js:41:62
+      1  100.0%            LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:72:39
+      1    2.1%        LazyCompile: ~compileFunction node:vm:311:25
+      1  100.0%          LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1025:18
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1    2.1%        LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:753:24
+      1  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:1005:36
+      1    2.1%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:490:28
+      1  100.0%          LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:856:35
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:753:24
+      1    2.1%        LazyCompile: ~Module node:internal/modules/cjs/loader:168:16
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:753:24
+      1  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:1005:36
+      1    2.1%        LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/helpers/pluralize.js:86:34
+      1  100.0%          T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+      1  100.0%            LazyCompile: ~pluralize /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/helpers/pluralize.js:82:19
+      1    2.1%        LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/debug/src/node.js:124:55
+      1  100.0%          T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+      1  100.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/debug/src/node.js:1:1
+      1    2.1%        LazyCompile: *Module._load node:internal/modules/cjs/loader:753:24
+      1  100.0%          LazyCompile: ~Module.require node:internal/modules/cjs/loader:1005:36
+      1  100.0%            LazyCompile: ~require node:internal/modules/cjs/helpers:92:31
+      1    2.1%        Eval: ~<anonymous> node:zlib:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1    2.1%        Eval: ~<anonymous> node:constants:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+     19    3.4%      LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+     10   52.6%        LazyCompile: ~handle /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:136:31
+      9   90.0%          LazyCompile: ~router /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:46:18
+      9  100.0%            LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+      1   10.0%          LazyCompile: ~handle /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/application.js:158:29
+      1  100.0%            LazyCompile: ~app /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/express.js:38:21
+      2   10.5%        LazyCompile: ~jsonParser /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/body-parser/lib/types/json.js:98:30
+      2  100.0%          LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+      2  100.0%            LazyCompile: ~expressInit /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/middleware/init.js:29:30
+      2   10.5%        LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:485:38
+      2  100.0%          LazyCompile: *processImmediate node:internal/timers:421:28
+      2   10.5%        LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/dist/services/server.js:38:9
+      2  100.0%          LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+      2  100.0%            LazyCompile: ~strategy.pass /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/passport/lib/middleware/authenticate.js:336:31
+      2   10.5%        LazyCompile: *handle /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:136:31
+      2  100.0%          LazyCompile: ~router /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:46:18
+      2  100.0%            LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+      1    5.3%        LazyCompile: ~initialize /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/passport/lib/middleware/initialize.js:51:29
+      1  100.0%          LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+      1  100.0%            LazyCompile: ~error /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/serve-static/index.js:115:39
+     15    2.7%      LazyCompile: ~setWriteHeadHeaders /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/on-headers/index.js:105:30
+     15  100.0%        LazyCompile: ~writeHead /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/on-headers/index.js:28:29
+     15  100.0%          LazyCompile: ~_implicitHeader node:_http_server:265:68
+     15  100.0%            LazyCompile: ~writetop /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:270:24
+     12    2.2%      LazyCompile: ~compression /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/compression/index.js:59:31
+     10   83.3%        LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+     10  100.0%          LazyCompile: ~jsonParser /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/body-parser/lib/types/json.js:98:30
+     10  100.0%            LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+      2   16.7%        LazyCompile: ~handle /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/layer.js:86:49
+      2  100.0%          LazyCompile: ~trim_prefix /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:288:23
+      2  100.0%            LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:275:64
+     12    2.2%      LazyCompile: ~Module._load node:internal/modules/cjs/loader:753:24
+     10   83.3%        LazyCompile: ~Module.require node:internal/modules/cjs/loader:1005:36
+     10  100.0%          LazyCompile: ~require node:internal/modules/cjs/helpers:92:31
+      1   10.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:1:1
+      1   10.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/semver/index.js:1:1
+      1   10.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/helpers/update/updatedPathsByArrayFilter.js:1:1
+      1   10.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/helpers/query/castUpdate.js:1:1
+      1   10.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/faker/lib/locales/sk/name/index.js:1:1
+      1   10.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/faker/lib/locales/nb_NO/address/index.js:1:1
+      1   10.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/faker/lib/locales/he/address/index.js:1:1
+      1   10.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/faker/lib/locales.js:1:1
+      1   10.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/express.js:1:1
+      1   10.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/compression/node_modules/debug/src/index.js:1:1
+      2   16.7%        LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:69:31
+      2  100.0%          Eval: ~<anonymous> node:internal/main/run_main_module:1:1
+     12    2.2%      LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      4   33.3%        LazyCompile: ~write_ node:_http_outgoing:728:16
+      4  100.0%          LazyCompile: ~write node:_http_outgoing:699:49
+      4  100.0%            LazyCompile: ~write /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/compression/index.js:78:32
+      3   25.0%        LazyCompile: ~onwrite node:internal/streams/writable:425:17
+      2   66.7%          LazyCompile: ~afterWriteDispatched node:internal/stream_base_commons:155:30
+      2  100.0%            LazyCompile: ~writevGeneric node:internal/stream_base_commons:122:23
+      1   33.3%          LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+      1  100.0%            LazyCompile: *_write node:internal/streams/writable:283:16
+      3   25.0%        LazyCompile: ~endReadable node:internal/streams/readable:1295:21
+      3  100.0%          LazyCompile: ~Readable.read node:internal/streams/readable:395:35
+      2   66.7%            LazyCompile: ~resume_ node:internal/streams/readable:982:17
+      1   33.3%            LazyCompile: ~flow node:internal/streams/readable:1006:14
+      1    8.3%        LazyCompile: ~resOnFinish node:_http_server:784:21
+      1  100.0%          LazyCompile: ~emit node:events:314:44
+      1  100.0%            LazyCompile: ~onFinish node:_http_outgoing:826:18
+      1    8.3%        LazyCompile: ~emitReadable node:internal/streams/readable:560:22
+      1  100.0%          LazyCompile: ~onEofChunk node:internal/streams/readable:530:20
+      1  100.0%            LazyCompile: ~readableAddChunk node:internal/streams/readable:236:26
+     11    2.0%      LazyCompile: ~writeHead node:_http_server:270:19
+     11  100.0%        LazyCompile: ~writeHead /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/on-headers/index.js:28:29
+     11  100.0%          LazyCompile: ~writeHead /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/on-headers/index.js:28:29
+     11  100.0%            LazyCompile: ~_implicitHeader node:_http_server:265:68
+     11    2.0%      LazyCompile: ~stringify /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:1118:20
+     11  100.0%        LazyCompile: ~json /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:239:25
+     11  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/dist/routes/index.js:57:21
+     11  100.0%            LazyCompile: ~handle /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/layer.js:86:49
+     11    2.0%      LazyCompile: ~hash /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:596:14
+      8   72.7%        LazyCompile: ~isSaved /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:430:21
+      8  100.0%          LazyCompile: ~shouldSave /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:440:24
+      8  100.0%            LazyCompile: ~end /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:250:27
+      2   18.2%        LazyCompile: ~save /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:403:20
+      2  100.0%          LazyCompile: ~end /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:250:27
+      2  100.0%            LazyCompile: ~send /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:107:25
+      1    9.1%        LazyCompile: ~inflate /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:371:22
+      1  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:485:38
+      1  100.0%            LazyCompile: ~processImmediate node:internal/timers:421:28
+      9    1.6%      LazyCompile: ~resOnFinish node:_http_server:784:21
+      6   66.7%        LazyCompile: ~emit node:events:314:44
+      6  100.0%          LazyCompile: ~onFinish node:_http_outgoing:826:18
+      6  100.0%            LazyCompile: ~callback node:internal/streams/writable:550:44
+      3   33.3%        LazyCompile: *emit node:events:314:44
+      3  100.0%          LazyCompile: ~onFinish node:_http_outgoing:826:18
+      3  100.0%            LazyCompile: ~callback node:internal/streams/writable:550:44
+      9    1.6%      LazyCompile: ~initialize /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/passport/lib/middleware/initialize.js:51:29
+      9  100.0%        LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+      9  100.0%          LazyCompile: ~error /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/serve-static/index.js:115:39
+      6   66.7%            LazyCompile: ~emit node:events:314:44
+      3   33.3%            LazyCompile: *emit node:events:314:44
+      9    1.6%      LazyCompile: ~getOptions node:internal/fs/utils:313:20
+      8   88.9%        LazyCompile: ~readFileSync node:fs:448:22
+      8  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      8  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+      1   11.1%        LazyCompile: ~realpathSync node:fs:2403:22
+      1  100.0%          LazyCompile: ~toRealPath node:internal/modules/cjs/loader:389:20
+      1  100.0%            LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:490:28
+      9    1.6%      LazyCompile: *realpathSync node:fs:2403:22
+      6   66.7%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:490:28
+      4   66.7%          LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:856:35
+      3   75.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:753:24
+      1   25.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:753:24
+      2   33.3%          LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:856:35
+      2  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:753:24
+      3   33.3%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:389:20
+      3  100.0%          LazyCompile: ~tryFile node:internal/modules/cjs/loader:380:17
+      3  100.0%            LazyCompile: ~tryExtensions node:internal/modules/cjs/loader:396:23
+      8    1.4%      LazyCompile: ~send /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:107:25
+      8  100.0%        LazyCompile: ~json /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:239:25
+      8  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/dist/routes/index.js:57:21
+      8  100.0%            LazyCompile: ~handle /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/layer.js:86:49
+      8    1.4%      LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/dist/services/server.js:38:9
+      8  100.0%        LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+      8  100.0%          LazyCompile: ~strategy.pass /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/passport/lib/middleware/authenticate.js:336:31
+      8  100.0%            LazyCompile: ~SessionStrategy.authenticate /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/passport/lib/strategies/session.js:45:50
+      8    1.4%      LazyCompile: *readPackage node:internal/modules/cjs/loader:286:21
+      4   50.0%        LazyCompile: *readPackageScope node:internal/modules/cjs/loader:317:26
+      3   75.0%          LazyCompile: ~trySelf node:internal/modules/cjs/loader:437:17
+      3  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:856:35
+      1   25.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+      3   37.5%        LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:856:35
+      3  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:753:24
+      3  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:1005:36
+      1   12.5%        LazyCompile: ~tryPackage node:internal/modules/cjs/loader:334:20
+      1  100.0%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:490:28
+      1  100.0%            LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:856:35
+      7    1.3%      LazyCompile: ~session /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:179:26
+      7  100.0%        LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+      7  100.0%          LazyCompile: ~compression /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/compression/index.js:59:31
+      7  100.0%            LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+      7    1.3%      LazyCompile: ~Hash node:internal/crypto/hash:58:14
+      7  100.0%        LazyCompile: ~createHash node:crypto:129:20
+      6   85.7%          LazyCompile: ~hash /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:596:14
+      3   50.0%            LazyCompile: ~isSaved /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:430:21
+      2   33.3%            LazyCompile: ~save /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:403:20
+      1   16.7%            LazyCompile: ~inflate /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:371:22
+      1   14.3%          LazyCompile: ~sha1 /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/cookie-signature/index.js:49:14
+      1  100.0%            LazyCompile: ~exports.unsign /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/cookie-signature/index.js:36:26
+      6    1.1%      LazyCompile: ~writevGeneric node:internal/stream_base_commons:122:23
+      6  100.0%        LazyCompile: ~Socket._writeGeneric node:net:743:42
+      6  100.0%          LazyCompile: ~Socket._writev node:net:775:36
+      6  100.0%            LazyCompile: ~doWrite node:internal/streams/writable:398:17
+      6    1.1%      LazyCompile: ~set /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/session/memory.js:119:41
+      6  100.0%        LazyCompile: ~save /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/session/session.js:71:54
+      6  100.0%          LazyCompile: ~save /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:403:20
+      6  100.0%            LazyCompile: ~end /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:250:27
+      6    1.1%      LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/request.js:467:36
+      6  100.0%        T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+      6  100.0%          LazyCompile: ~send /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:107:25
+      6  100.0%            LazyCompile: ~json /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:239:25
+      6    1.1%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:490:28
+      3   50.0%        LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:856:35
+      3  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:753:24
+      3  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:1005:36
+      3   50.0%        LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:856:35
+      3  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:753:24
+      3  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:1005:36
+
+    787   18.4%  T __ZN4node10contextify17ContextifyContext15CompileFunctionERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+    787  100.0%    T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+    787  100.0%      LazyCompile: ~compileFunction node:vm:311:25
+    625   79.4%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1025:18
+    625  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+    625  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+    162   20.6%        LazyCompile: *Module._compile node:internal/modules/cjs/loader:1063:37
+    162  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+    162  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+
+    751   17.6%  T _host_get_clock_service
+
+    172    4.0%  T __ZN4node10StreamBase8JSMethodIXadL_ZNS0_6WritevERKN2v820FunctionCallbackInfoINS2_5ValueEEEEEEEvS7_
+    172  100.0%    T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+    172  100.0%      LazyCompile: ~writevGeneric node:internal/stream_base_commons:122:23
+    172  100.0%        LazyCompile: ~Socket._writeGeneric node:net:743:42
+    172  100.0%          LazyCompile: ~Socket._writev node:net:775:36
+    172  100.0%            LazyCompile: ~doWrite node:internal/streams/writable:398:17
+
+    100    2.3%  T __ZN4node13native_module15NativeModuleEnv15CompileFunctionERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+    100  100.0%    T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+    100  100.0%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     75   75.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      7    9.3%          Eval: ~<anonymous> node:internal/child_process:1:1
+      7  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7    9.3%          Eval: ~<anonymous> node:http:1:1
+      7  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      7    9.3%          Eval: ~<anonymous> node:crypto:1:1
+      7  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5    6.7%          Eval: ~<anonymous> node:tls:1:1
+      5  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5    6.7%          Eval: ~<anonymous> node:internal/modules/esm/loader:1:1
+      5  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    5.3%          Eval: ~<anonymous> node:child_process:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      4    5.3%          Eval: ~<anonymous> node:assert:1:1
+      4  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    4.0%          Eval: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    4.0%          Eval: ~<anonymous> node:internal/crypto/hkdf:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3    4.0%          Eval: ~<anonymous> node:_http_client:1:1
+      3  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.7%          LazyCompile: ~lazyRequire node:internal/crypto/util:66:21
+      2  100.0%            LazyCompile: ~get node:crypto:287:8
+      2    2.7%          LazyCompile: ~lazyLoadStreams node:fs:2800:25
+      2  100.0%            LazyCompile: ~get ReadStream node:fs:2941:17
+      2    2.7%          LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:414:29
+      2  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      2    2.7%          Eval: ~<anonymous> node:internal/http:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.7%          Eval: ~<anonymous> node:internal/crypto/random:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.7%          Eval: ~<anonymous> node:dgram:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    2.7%          Eval: ~<anonymous> node:_http_common:1:1
+      2  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          LazyCompile: ~lazyLoadPromises node:stream:50:26
+      1  100.0%            LazyCompile: ~get node:stream:58:6
+      1    1.3%          LazyCompile: ~get node:dns:329:8
+      1  100.0%            T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+      1    1.3%          LazyCompile: ~get BlockList node:net:1746:16
+      1  100.0%            T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+      1    1.3%          Eval: ~<anonymous> node:tty:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Eval: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Eval: ~<anonymous> node:internal/process/esm_loader:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Eval: ~<anonymous> node:internal/modules/package_json_reader:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Eval: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Eval: ~<anonymous> node:internal/cluster/primary:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Eval: ~<anonymous> node:dns:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Eval: ~<anonymous> node:cluster:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Eval: ~<anonymous> node:_tls_wrap:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1    1.3%          Eval: ~<anonymous> node:_http_server:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     25   25.0%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+     25  100.0%          LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:35:26
+     25  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:753:24
+
+     73    1.7%  t __ZN4node2fsL4OpenERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+     72   98.6%    T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+     72  100.0%      LazyCompile: ~openSync node:fs:574:18
+     72  100.0%        LazyCompile: ~readFileSync node:fs:448:22
+     71   98.6%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+     60   84.5%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+     11   15.5%            LazyCompile: *Module._load node:internal/modules/cjs/loader:753:24
+      1    1.4%          LazyCompile: ~config /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/dotenv/lib/main.js:82:17
+      1  100.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/dist/config/index.js:1:1
+      1    1.4%    LazyCompile: *readFileSync node:fs:448:22
+      1  100.0%      LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1  100.0%        LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:753:24
+      1  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:1005:36
+
+     64    1.5%  /usr/lib/system/libsystem_pthread.dylib
+     39   60.9%    T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+      3    7.7%      T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+      2   66.7%        LazyCompile: ~abbrev /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/abbrev/abbrev.js:17:17
+      2  100.0%          LazyCompile: ~parse /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/nopt/lib/nopt.js:242:16
+      2  100.0%            LazyCompile: ~nopt /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/nopt/lib/nopt.js:26:15
+      1   33.3%        LazyCompile: ~parse node:url:170:37
+      1  100.0%          LazyCompile: ~urlParse node:url:154:18
+      1  100.0%            LazyCompile: ~validate_config /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      3    7.7%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:389:20
+      3  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:490:28
+      3  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:12:25
+      3  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:69:31
+      3    7.7%      LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      3  100.0%        LazyCompile: ~getStdout node:internal/bootstrap/switches/is_main_thread:120:19
+      3  100.0%          Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/supports-color/index.js:1:1
+      3  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      2    5.1%      LazyCompile: ~getCheckedFunction node:os:63:28
+      2  100.0%        Eval: ~<anonymous> node:os:1:1
+      2  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      2    5.1%      LazyCompile: ~exports.find /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/@mapbox/node-pre-gyp/lib/pre-binding.js:17:24
+      2  100.0%        Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/bcrypt/bcrypt.js:1:1
+      2  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      2  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      2    5.1%      Eval: ~<anonymous> node:internal/fs/rimraf:1:1
+      2  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2  100.0%            Eval: ~<anonymous> node:internal/fs/promises:1:1
+      1    2.6%      LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:139:29
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%          Eval: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.6%      LazyCompile: ~setImmediate node:timers:239:22
+      1  100.0%        LazyCompile: ~log /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/lib/winston/transports/console.js:44:6
+      1  100.0%          LazyCompile: ~_write /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston-transport/index.js:69:51
+      1  100.0%            LazyCompile: ~doWrite /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/readable-stream/lib/_stream_writable.js:423:17
+      1    2.6%      LazyCompile: ~randomFill node:internal/crypto/random:145:20
+      1  100.0%        LazyCompile: ~randomBytes node:internal/crypto/random:91:21
+      1  100.0%          LazyCompile: ~prepare /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:16:12
+      1  100.0%            LazyCompile: ~prepareHandshakeDocument /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:128:34
+      1    2.6%      LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:79:28
+      1  100.0%        LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:22:36
+      1  100.0%          Eval: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    2.6%      LazyCompile: ~log /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/lib/winston/transports/console.js:44:6
+      1  100.0%        LazyCompile: ~_write /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston-transport/index.js:69:51
+      1  100.0%          LazyCompile: ~doWrite /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/readable-stream/lib/_stream_writable.js:423:17
+      1  100.0%            LazyCompile: ~writeOrBuffer /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/readable-stream/lib/_stream_writable.js:384:23
+      1    2.6%      LazyCompile: ~inTransaction /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/sessions.js:218:18
+      1  100.0%        LazyCompile: ~executeWithServerSelection /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/operations/execute_operation.js:65:36
+      1  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/operations/execute_operation.js:16:43
+      1  100.0%            LazyCompile: ~maybePromise /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/utils.js:506:22
+      1    2.6%      LazyCompile: ~get protocol /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/whatwg-url/dist/URL.js:160:17
+      1  100.0%        LazyCompile: ~get isSRV /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongodb-connection-string-url/lib/index.js:120:14
+      1  100.0%          LazyCompile: ~ConnectionString /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongodb-connection-string-url/lib/index.js:62:16
+      1  100.0%            LazyCompile: ~parseOptions /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:205:22
+      1    2.6%      LazyCompile: ~deserialize /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/bson/lib/parser/deserializer.js:25:21
+      1  100.0%        LazyCompile: ~deserialize /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/bson/lib/bson.js:162:21
+      1  100.0%          LazyCompile: ~parse /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:384:10
+      1  100.0%            LazyCompile: ~messageHandler /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1    2.6%      LazyCompile: ~db /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js:165:7
+      1  100.0%        LazyCompile: ~_setClient /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/connection.js:825:20
+      1  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/connection.js:785:20
+      1  100.0%            LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/utils.js:518:13
+      1    2.6%      LazyCompile: ~createDebug /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/node_modules/debug/src/debug.js:63:21
+      1  100.0%        Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/route.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1    2.6%      LazyCompile: ~create /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/handlebars/dist/cjs/handlebars.runtime.js:40:16
+      1  100.0%        Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/handlebars/dist/cjs/handlebars.runtime.js:1:1
+      1  100.0%          LazyCompile: *Module._compile node:internal/modules/cjs/loader:1063:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1    2.6%      LazyCompile: ~connect node:_tls_wrap:1600:35
+      1  100.0%        LazyCompile: ~makeConnection /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:227:24
+      1  100.0%          LazyCompile: ~connect /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:15:17
+      1  100.0%            LazyCompile: ~checkServer /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:138:21
+      1    2.6%      LazyCompile: ~_setClient /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/connection.js:825:20
+      1  100.0%        LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/connection.js:785:20
+      1  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/utils.js:518:13
+      1  100.0%            LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js:127:53
+      1    2.6%      LazyCompile: ~Schema.defaultOptions /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/schema.js:417:43
+      1  100.0%        LazyCompile: ~Schema /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/schema.js:90:16
+      1  100.0%          Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/dist/models/user.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1    2.6%      LazyCompile: ~Route.<computed> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/route.js:193:37
+      1  100.0%        LazyCompile: ~proto.<computed> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:508:27
+      1  100.0%          Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/dist/routes/user.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1    2.6%      LazyCompile: ~Readable node:internal/streams/readable:181:18
+      1  100.0%        LazyCompile: ~Duplex node:internal/streams/duplex:52:16
+      1  100.0%          LazyCompile: ~Socket node:net:272:16
+      1  100.0%            LazyCompile: ~WriteStream node:tty:85:21
+      1    2.6%      LazyCompile: ~NativeCollection.<computed> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:76:43
+      1  100.0%        LazyCompile: ~create /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/model.js:1705:26
+      1  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/model.js:1762:21
+      1  100.0%            LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    2.6%      LazyCompile: ~Long.compare /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/bson/lib/long.js:291:39
+      1  100.0%        LazyCompile: ~Long.comp /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/bson/lib/long.js:311:36
+      1  100.0%          LazyCompile: ~Long.lessThanOrEqual /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/bson/lib/long.js:516:47
+      1  100.0%            LazyCompile: ~deserializeObject /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/bson/lib/parser/deserializer.js:54:27
+      1    2.6%      LazyCompile: ~Gauge._computeTheme /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/gauge/index.js:85:42
+      1  100.0%        LazyCompile: ~Gauge /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/gauge/index.js:19:16
+      1  100.0%          Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/npmlog/log.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1    2.6%      LazyCompile: ~Duplex node:internal/streams/duplex:52:16
+      1  100.0%        LazyCompile: ~Socket node:net:272:16
+      1  100.0%          LazyCompile: ~WriteStream node:tty:85:21
+      1  100.0%            LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:41:35
+      1    2.6%      Eval: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Eval: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      1    2.6%      Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/defaultAuthProviders.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+      1    2.6%      Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/cursor/QueryCursor.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+      1    2.6%      Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/dist/services/server.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+     19   29.7%    LazyCompile: *compileFunction node:vm:311:25
+     19  100.0%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1025:18
+     19  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+     19  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+     19  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+
+     50    1.2%  /usr/lib/system/libsystem_malloc.dylib
+     30   60.0%    T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+      4   13.3%      T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+      1   25.0%        LazyCompile: ~parseHost node:url:963:45
+      1  100.0%          LazyCompile: ~parse node:url:170:37
+      1  100.0%            LazyCompile: ~urlParse node:url:154:18
+      1   25.0%        LazyCompile: ~getOwn node:internal/bootstrap/loaders:180:16
+      1  100.0%          LazyCompile: ~syncExports node:internal/bootstrap/loaders:287:14
+      1  100.0%            LazyCompile: ~<anonymous> node:internal/bootstrap/loaders:273:15
+      1   25.0%        LazyCompile: ~checkInvalidHeaderChar node:_http_common:231:32
+      1  100.0%          LazyCompile: ~<anonymous> node:_http_outgoing:562:45
+      1  100.0%            LazyCompile: ~setHeader node:_http_outgoing:572:57
+      1   25.0%        Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/color/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      3   10.0%      LazyCompile: ~hash /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:596:14
+      3  100.0%        LazyCompile: ~isSaved /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:430:21
+      3  100.0%          LazyCompile: ~shouldSave /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:440:24
+      3  100.0%            LazyCompile: ~end /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:250:27
+      3   10.0%      LazyCompile: *realpathSync node:fs:2403:22
+      2   66.7%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:389:20
+      2  100.0%          LazyCompile: ~tryFile node:internal/modules/cjs/loader:380:17
+      2  100.0%            LazyCompile: ~tryExtensions node:internal/modules/cjs/loader:396:23
+      1   33.3%        LazyCompile: *Module._findPath node:internal/modules/cjs/loader:490:28
+      1  100.0%          LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:856:35
+      1  100.0%            LazyCompile: *Module._load node:internal/modules/cjs/loader:753:24
+      3   10.0%      LazyCompile: *Module._findPath node:internal/modules/cjs/loader:490:28
+      2   66.7%        LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:856:35
+      2  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:753:24
+      2  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:1005:36
+      1   33.3%        LazyCompile: *Module._resolveFilename node:internal/modules/cjs/loader:856:35
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:753:24
+      1  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:1005:36
+      2    6.7%      LazyCompile: ~tryDecode /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/cookie/index.js:196:19
+      2  100.0%        LazyCompile: ~parse /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/cookie/index.js:49:15
+      2  100.0%          LazyCompile: ~getcookie /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:529:19
+      2  100.0%            LazyCompile: ~session /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:179:26
+      2    6.7%      LazyCompile: ~getSession /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/session/memory.js:164:20
+      2  100.0%        LazyCompile: ~get /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/session/memory.js:106:41
+      2  100.0%          LazyCompile: ~session /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:179:26
+      2  100.0%            LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+      1    3.3%      LazyCompile: ~toBin /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:82:10
+      1  100.0%        LazyCompile: ~writeCommand /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:35:17
+      1  100.0%          LazyCompile: ~write /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:488:15
+      1  100.0%            LazyCompile: ~command /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:161:12
+      1    3.3%      LazyCompile: ~stringify /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:1118:20
+      1  100.0%        LazyCompile: ~json /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:239:25
+      1  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/dist/routes/index.js:57:21
+      1  100.0%            LazyCompile: ~handle /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/layer.js:86:49
+      1    3.3%      LazyCompile: ~set /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/session/memory.js:119:41
+      1  100.0%        LazyCompile: ~save /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/session/session.js:71:54
+      1  100.0%          LazyCompile: ~save /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:403:20
+      1  100.0%            LazyCompile: ~end /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express-session/index.js:250:27
+      1    3.3%      LazyCompile: ~send /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:107:25
+      1  100.0%        LazyCompile: ~json /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:239:25
+      1  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/dist/routes/index.js:57:21
+      1  100.0%            LazyCompile: ~handle /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/layer.js:86:49
+      1    3.3%      LazyCompile: ~parse /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/content-type/index.js:106:16
+      1  100.0%        LazyCompile: ~setCharset /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/utils.js:250:41
+      1  100.0%          LazyCompile: ~send /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:107:25
+      1  100.0%            LazyCompile: ~json /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/response.js:239:25
+      1    3.3%      LazyCompile: ~has /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongodb-connection-string-url/lib/index.js:44:8
+      1  100.0%        LazyCompile: ~parseOptions /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:205:22
+      1  100.0%          LazyCompile: ~MongoClient /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js:60:16
+      1  100.0%            LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/connection.js:776:31
+      1    3.3%      LazyCompile: ~decode /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/send/index.js:987:17
+      1  100.0%        LazyCompile: ~pipe /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/send/index.js:510:43
+      1  100.0%          LazyCompile: ~serveStatic /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/serve-static/index.js:72:31
+      1  100.0%            LazyCompile: *next /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:176:16
+      1    3.3%      LazyCompile: ~afterWrite /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/readable-stream/lib/_stream_writable.js:488:20
+      1  100.0%        LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    3.3%      LazyCompile: ~adapter /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/@dabh/diagnostics/adapters/index.js:11:26
+      1  100.0%        LazyCompile: ~enabled /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/@dabh/diagnostics/diagnostics.js:55:17
+      1  100.0%          LazyCompile: ~dev /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/@dabh/diagnostics/node/development.js:12:38
+      1  100.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/lib/winston/exception-handler.js:1:1
+      1    3.3%      LazyCompile: ~Module._load node:internal/modules/cjs/loader:753:24
+      1  100.0%        LazyCompile: ~Module.require node:internal/modules/cjs/loader:1005:36
+      1  100.0%          LazyCompile: ~require node:internal/modules/cjs/helpers:92:31
+      1  100.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/faker/lib/locales/es_MX/address/index.js:1:1
+      1    3.3%      LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+      1  100.0%        LazyCompile: *_write node:internal/streams/writable:283:16
+      1  100.0%          LazyCompile: ~Writable.write node:internal/streams/writable:333:36
+      1  100.0%            LazyCompile: ~value node:internal/console/constructor:261:20
+      1    3.3%      LazyCompile: *readPackage node:internal/modules/cjs/loader:286:21
+      1  100.0%        LazyCompile: *readPackageScope node:internal/modules/cjs/loader:317:26
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+      1    3.3%      LazyCompile: *Module._load node:internal/modules/cjs/loader:753:24
+      1  100.0%        LazyCompile: ~Module.require node:internal/modules/cjs/loader:1005:36
+      1  100.0%          LazyCompile: ~require node:internal/modules/cjs/helpers:92:31
+      1  100.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/faker/lib/locales/de_AT/index.js:1:1
+      1    2.0%    LazyCompile: *compileFunction node:vm:311:25
+      1  100.0%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1025:18
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+
+     49    1.1%  T __kernelrpc_mach_port_set_attributes
+     27   55.1%    T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+      3   11.1%      T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+      1   33.3%        LazyCompile: ~module.exports /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/logform/node_modules/colors/lib/system/has-flag.js:27:26
+      1  100.0%          Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/logform/node_modules/colors/lib/system/supports-colors.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1   33.3%        LazyCompile: ~CaseInsensitiveMap /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:189:16
+      1  100.0%          Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:1:1
+      1  100.0%            LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1   33.3%        Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mquery/lib/mquery.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      3   11.1%      LazyCompile: ~Faker /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/faker/lib/index.js:24:16
+      3  100.0%        Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/faker/index.js:1:1
+      3  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      3  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1    3.7%      LazyCompile: ~realpathSync node:fs:2403:22
+      1  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:389:20
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:490:28
+      1  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:12:25
+      1    3.7%      LazyCompile: ~processImmediate node:internal/timers:421:28
+      1    3.7%      LazyCompile: ~pathToFileURL node:internal/url:1410:23
+      1  100.0%        LazyCompile: ~resolveExports node:internal/modules/cjs/loader:468:24
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:490:28
+      1  100.0%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:856:35
+      1    3.7%      LazyCompile: ~passwordDigest /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:182:24
+      1  100.0%        LazyCompile: ~continueScramConversation /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:85:75
+      1  100.0%            LazyCompile: ~messageHandler /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1    3.7%      LazyCompile: ~handleOperationResult /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:315:42
+      1  100.0%        LazyCompile: ~messageHandler /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%          LazyCompile: ~emit node:events:314:44
+      1  100.0%            LazyCompile: ~processIncomingData /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    3.7%      LazyCompile: ~handleErrorFromBinding node:internal/fs/utils:339:32
+      1  100.0%        LazyCompile: ~accessSync node:fs:240:20
+      1  100.0%          LazyCompile: ~exists /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/bindings/bindings.js:12:15
+      1  100.0%            LazyCompile: ~getRoot /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/bindings/bindings.js:194:35
+      1    3.7%      LazyCompile: ~handle /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/router/index.js:136:31
+      1  100.0%        LazyCompile: ~handle /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/application.js:158:29
+      1  100.0%          LazyCompile: ~app /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/express.js:38:21
+      1  100.0%            LazyCompile: ~emit node:events:314:44
+      1    3.7%      LazyCompile: ~get logger /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js:119:15
+      1  100.0%        LazyCompile: ~connect /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/operations/connect.js:17:17
+      1  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js:126:47
+      1  100.0%            LazyCompile: ~maybePromise /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/utils.js:506:22
+      1    3.7%      LazyCompile: ~createTopology /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/operations/connect.js:53:24
+      1  100.0%        LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/operations/connect.js:41:62
+      1  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:72:39
+      1  100.0%            LazyCompile: ~onresolve node:dns:203:19
+      1    3.7%      LazyCompile: ~createAndConnectServer /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:546:32
+      1  100.0%        LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:572:52
+      1  100.0%          T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+      1  100.0%            LazyCompile: ~connectServers /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:571:24
+      1    3.7%      LazyCompile: ~compileFunction node:vm:311:25
+      1  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1025:18
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1    3.7%      LazyCompile: ~addIdGetter /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/helpers/schema/idGetter.js:7:38
+      1  100.0%        LazyCompile: ~_preCompile /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/schema.js:2196:52
+      1  100.0%          LazyCompile: ~compile /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/model.js:4729:33
+      1  100.0%            LazyCompile: ~Mongoose._model /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/index.js:523:37
+      1    3.7%      LazyCompile: ~Writable.write /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/readable-stream/lib/_stream_writable.js:314:37
+      1  100.0%        LazyCompile: ~ondata /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:679:18
+      1  100.0%          LazyCompile: ~emit node:events:314:44
+      1  100.0%            LazyCompile: ~addChunk /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:295:18
+      1    3.7%      LazyCompile: ~Pager /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/memory-pager/index.js:3:16
+      1  100.0%        LazyCompile: ~Pager /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/memory-pager/index.js:3:16
+      1  100.0%          LazyCompile: ~Bitfield /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/sparse-bitfield/index.js:5:19
+      1  100.0%            LazyCompile: ~Bitfield /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/sparse-bitfield/index.js:5:19
+      1    3.7%      LazyCompile: ~CreateIndexOperation /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/operations/indexes.js:120:16
+      1  100.0%        LazyCompile: ~createIndex /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/collection.js:255:16
+      1  100.0%          LazyCompile: ~NativeCollection.<computed> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:76:43
+      1  100.0%            LazyCompile: ~create /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/model.js:1705:26
+      1    3.7%      LazyCompile: ~ConnectionPoolCreatedEvent /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection_pool_events.js:24:16
+      1  100.0%        LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection_pool.js:76:26
+      1  100.0%          LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    3.7%      LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection_pool.js:266:27
+      1  100.0%        LazyCompile: ~handleOperationResult /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:315:42
+      1  100.0%          LazyCompile: ~messageHandler /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%            LazyCompile: ~emit node:events:314:44
+      1    3.7%      LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:73:80
+      1  100.0%        LazyCompile: ~messageHandler /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1  100.0%          LazyCompile: ~emit node:events:314:44
+      1  100.0%            LazyCompile: ~processIncomingData /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    3.7%      Eval: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    3.7%      Eval: ~<anonymous> node:internal/fs/rimraf:1:1
+      1  100.0%        LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%          LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%            Eval: ~<anonymous> node:internal/fs/promises:1:1
+      1    3.7%      Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/bson/lib/error.js:20:41
+      1  100.0%        Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/bson/lib/error.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      8   16.3%    LazyCompile: *compileFunction node:vm:311:25
+      8  100.0%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1025:18
+      8  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      8  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      8  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+
+     47    1.1%  /usr/lib/system/libsystem_c.dylib
+     28   59.6%    T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+      3   10.7%      LazyCompile: ~value node:internal/console/constructor:324:20
+      3  100.0%        LazyCompile: ~log node:internal/console/constructor:362:6
+      3  100.0%          t __ZN4node9inspector12_GLOBAL__N_120InspectorConsoleCallERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      3  100.0%            LazyCompile: ~connectDb /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/dist/services/db.js:9:19
+      1    3.6%      LazyCompile: ~writeCommand /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:35:17
+      1  100.0%        LazyCompile: ~write /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:488:15
+      1  100.0%          LazyCompile: ~command /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:161:12
+      1  100.0%            LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:63:43
+      1    3.6%      LazyCompile: ~unenroll node:timers:78:18
+      1  100.0%        LazyCompile: ~clearTimeout node:timers:173:22
+      1  100.0%          LazyCompile: ~reschedule /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/utils.js:807:24
+      1  100.0%            LazyCompile: ~wake /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/utils.js:770:18
+      1    3.6%      LazyCompile: ~toRealPath node:internal/modules/cjs/loader:389:20
+      1  100.0%        LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:490:28
+      1  100.0%          LazyCompile: ~resolveMainPath node:internal/modules/run_main:12:25
+      1  100.0%            LazyCompile: ~executeUserEntryPoint node:internal/modules/run_main:69:31
+      1    3.6%      LazyCompile: ~realpathSync node:fs:2403:22
+      1  100.0%        LazyCompile: ~toRealPath node:internal/modules/cjs/loader:389:20
+      1  100.0%          LazyCompile: ~Module._findPath node:internal/modules/cjs/loader:490:28
+      1  100.0%            LazyCompile: ~resolveMainPath node:internal/modules/run_main:12:25
+      1    3.6%      LazyCompile: ~randomBytes node:internal/crypto/random:91:21
+      1  100.0%        LazyCompile: ~uuidV4 /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/utils.js:551:16
+      1  100.0%          LazyCompile: ~ServerSession /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/sessions.js:524:16
+      1  100.0%            LazyCompile: ~acquire /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/sessions.js:577:12
+      1    3.6%      LazyCompile: ~promiseOrCallback /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1  100.0%        LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/connection.js:558:18
+      1  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/model.js:1350:52
+      1  100.0%            LazyCompile: ~promiseOrCallback /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1    3.6%      LazyCompile: ~processWaitQueue /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:628:26
+      1  100.0%        LazyCompile: ~serverUpdateHandler /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:379:24
+      1  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:552:53
+      1  100.0%            LazyCompile: ~emit node:events:314:44
+      1    3.6%      LazyCompile: ~processWaitQueue /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection_pool.js:417:26
+      1  100.0%        LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    3.6%      LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    3.6%      LazyCompile: ~peek /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/utils.js:977:9
+      1  100.0%        LazyCompile: ~processIncomingData /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1  100.0%          LazyCompile: ~_write /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:26:11
+      1  100.0%            LazyCompile: ~writeOrBuffer node:internal/streams/writable:365:23
+      1    3.6%      LazyCompile: ~nextTick node:internal/process/task_queues:104:18
+      1  100.0%        LazyCompile: ~resume /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:902:16
+      1  100.0%          LazyCompile: ~Readable.resume /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:886:38
+      1  100.0%            LazyCompile: ~Readable.on /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:804:34
+      1    3.6%      LazyCompile: ~formatWithOptions node:internal/util/inspect:1881:27
+      1  100.0%        LazyCompile: ~value node:internal/console/constructor:324:20
+      1  100.0%          LazyCompile: ~log node:internal/console/constructor:362:6
+      1  100.0%            t __ZN4node9inspector12_GLOBAL__N_120InspectorConsoleCallERKN2v820FunctionCallbackInfoINS2_5ValueEEE
+      1    3.6%      LazyCompile: ~forEachCode /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/http-errors/index.js:243:38
+      1  100.0%        T __ZNK4node9inspector8protocol11BinaryValue8asBinaryEPNS1_6BinaryE
+      1  100.0%          LazyCompile: ~populateConstructorExports /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/http-errors/index.js:242:37
+      1  100.0%            Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/http-errors/index.js:1:1
+      1    3.6%      LazyCompile: ~emit node:events:314:44
+      1  100.0%        LazyCompile: ~Readable.pipe /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:608:36
+      1  100.0%          LazyCompile: ~add /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/lib/winston/logger.js:337:6
+      1  100.0%            LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/lib/winston/logger.js:118:26
+      1    3.6%      LazyCompile: ~deserializeObject /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/bson/lib/parser/deserializer.js:54:27
+      1  100.0%        LazyCompile: ~deserialize /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/bson/lib/parser/deserializer.js:25:21
+      1  100.0%          LazyCompile: ~deserialize /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/bson/lib/bson.js:162:21
+      1  100.0%            LazyCompile: ~parse /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:384:10
+      1    3.6%      LazyCompile: ~createServer node:http:58:22
+      1  100.0%        LazyCompile: ~listen /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/express/lib/application.js:616:29
+      1  100.0%          LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/dist/index.js:18:28
+      1  100.0%            t __ZN4node10task_queueL13RunMicrotasksERKN2v820FunctionCallbackInfoINS1_5ValueEEE
+      1    3.6%      LazyCompile: ~createHash node:crypto:129:20
+      1  100.0%        LazyCompile: ~passwordDigest /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:182:24
+      1  100.0%          LazyCompile: ~continueScramConversation /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%            LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/auth/scram.js:85:75
+      1    3.6%      LazyCompile: ~createDebug /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/finalhandler/node_modules/debug/src/debug.js:63:21
+      1  100.0%        Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/finalhandler/index.js:1:1
+      1  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1    3.6%      LazyCompile: ~Socket.connect node:net:911:36
+      1  100.0%        LazyCompile: ~connect node:_tls_wrap:1600:35
+      1  100.0%          LazyCompile: ~makeConnection /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:227:24
+      1  100.0%            LazyCompile: ~connect /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:15:17
+      1    3.6%      LazyCompile: ~Readable /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:169:18
+      1  100.0%        LazyCompile: ~Duplex /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/node_modules/readable-stream/lib/_stream_duplex.js:58:16
+      1  100.0%          LazyCompile: ~Transform /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:98:19
+      1  100.0%            LazyCompile: ~Logger /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/winston/lib/winston/logger.js:40:14
+      1    3.6%      LazyCompile: ~Connection /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:37:16
+      1  100.0%        LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:16:29
+      1  100.0%          LazyCompile: ~callback /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:239:31
+      1  100.0%            LazyCompile: ~connectHandler /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/cmap/connect.js:270:28
+      1    3.6%      LazyCompile: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/mongoose/node_modules/mongodb/lib/connection_string.js:72:39
+      1  100.0%        LazyCompile: ~onresolve node:dns:203:19
+      1    3.6%      Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/supports-color/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+      1    3.6%      Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/statuses/index.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+      1    3.6%      Eval: ~<anonymous> /Users/marcos/coder-house-js/entregables/27-desafio-coder-house/node_modules/@dabh/diagnostics/node/development.js:1:1
+      1  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+     17   36.2%    LazyCompile: *compileFunction node:vm:311:25
+     17  100.0%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1025:18
+     17  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1063:37
+     17  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1118:37
+     17  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:977:33
+

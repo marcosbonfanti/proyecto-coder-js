@@ -84,8 +84,7 @@ router.get('/datos', (req, res) => {
 });
 
 router.get('/info', (req, res) => {
-  logger.info(process);
-  res.json({
+  const info = {
     "argumentos": process.argv,
     "OS": process.platform,
     "Node Version": process.version,
@@ -94,7 +93,9 @@ router.get('/info', (req, res) => {
     "PID": process.pid,
     "NumCPU": numCPUs,
     "PORT": Config.PORT
-  })
+  }
+  console.log(info); 
+  res.json(info);
 });
 
 router.get('/randoms', (req, res) => {
